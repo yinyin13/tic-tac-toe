@@ -13,7 +13,7 @@ To test the tic-tac-toe game, you will be playing against the computer twice. He
     ```bash
     pytest tests.py
     ```
-4. You are Player X, and you will then be asked several times to make a move. To cover all test cases, please observe the board and make sure you make at least one invalid move in each game. (Invalid move = placing your symbol in a non-empty spot.)
+4. You are Player X, and you will then be asked several times to make a move. To cover all test cases, please observe the board and make sure you make **at least one invalid move in each game**. (Invalid move = placing your symbol in a non-empty spot.)
 
 ------------------------------------------------------------------------
 
