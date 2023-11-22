@@ -1,5 +1,22 @@
 # tic-tac-toe
 
+## Instructions for Testing
+To test the tic-tac-toe game, you will be playing against the computer twice. Here's what you should do in the test:
+1. Make sure you have Python installed on your machine.
+2. Install pytest, the testing framework:
+
+    ```bash
+    pip install pytest
+    ```
+3. Run the tests using the following command:
+
+    ```bash
+    pytest tests.py
+    ```
+4. You are Player X, and you will then be asked several times to make a move. To cover all test cases, please observe the board and make sure you make at least one invalid move in each game. (Invalid move = placing your symbol in a non-empty spot.)
+
+------------------------------------------------------------------------
+
 MIT License
 
 Copyright (c) 2023 Matilda Huang
