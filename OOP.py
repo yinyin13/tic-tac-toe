@@ -3,6 +3,7 @@ import random
 
 class Game:
     def __init__(self, playerX, playerO):
+        self._init_board = make_empty_board()
         self._board = make_empty_board()
         self._boardIndex = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
         self._playerX = playerX
@@ -55,6 +56,8 @@ class Game:
 class Human:
     def __init__(self, symbol):
         self.symbol = symbol
+        self._init_valid_input = 1
+        self._valid_input = 1
 
     def place_input(self, board, symbol, user_input):
         if int(user_input) == 1 and board[0][0] is None:
@@ -77,14 +80,18 @@ class Human:
             board[2][2] = symbol
 
     def get_player_input(self, board):
+        flat_board = [item for row in board for item in row]
         print(f"Player's turn!")
         user_input = input("Please choose an empty spot by typing its corresponding number: ")
 
-        if int(user_input) in range(1, 10):
+        if int(user_input) in range(1, 10) and flat_board[int(user_input)-1] is None:
             self.place_input(board, self.symbol, user_input)
         else:
             print("Invalid input!")
+            self._valid_input -= 1
             self.get_player_input(board)
+        
+        return self._valid_input
 
 class Bot:
     def __init__(self, symbol):
