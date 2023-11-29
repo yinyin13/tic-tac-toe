@@ -1,11 +1,5 @@
-"""
-
-3. Using the Google Colab notebook environment, upload the log file and import and read the logs in the Colab notebook
-4. Report on at least 3 interesting statistics about the games and players using tables (e.g. global ranks, wins/losses/draws, etc).
-5. Create at least 3 plots of the game and player data using Matplotlib, Seaborn, Plotly, or Pandas
-6. The code used to record data during the game needs to be added to your repository
-"""
 from logic import make_empty_board, print_board, get_winner
+from operator import *
 import random
 import time
 import os
@@ -78,9 +72,18 @@ class Game:
         else:
             print(f"{self._winner} won")
 
-        # Record the winner
+        # Record game data
         game_data['game_id'] = self._game_id
         game_data['game_duration'] = game_end_time - game_start_time
+
+        # Record rounds
+        flat_board_rounds = [item for row in self._board for item in row]
+        x_times = countOf(flat_board_rounds, 'X')/2
+        o_times = countOf(flat_board_rounds, 'O')/2
+
+        game_data['rounds'] = x_times + o_times
+
+        # Record winner
         if self._winner == 'X':
             game_data['winner'] = 'Human (Player X)'
         elif self._winner == 'O':

@@ -1,20 +1,35 @@
-game_id: 1701224398.724183
-game_duration: 6.688337802886963
+game_id: 1701238754.0034783
+game_duration: 4.5940587520599365
+rounds: 2.5
 winner: Human (Player X)
 
-game_id: 1701224418.5763977
-game_duration: 11.669219017028809
-winner: Bot (Player O)
-
-game_id: 1701224444.3128808
-game_duration: 7.58863091468811
+game_id: 1701238852.268228
+game_duration: 3.7684884071350098
+rounds: 2.5
 winner: Human (Player X)
 
-game_id: 1701224457.466012
-game_duration: 22.657958030700684
+game_id: 1701238879.1032264
+game_duration: 12.499454259872437
+rounds: 4.5
 winner: None
 
-game_id: 1701224524.4077191
-game_duration: 8.728529691696167
+game_id: 1701238894.0086756
+game_duration: 3.8420052528381348
+rounds: 2.5
+winner: Human (Player X)
+
+game_id: 1701238900.2915528
+game_duration: 11.626234292984009
+rounds: 4.0
+winner: Bot (Player O)
+
+game_id: 1701238914.6061149
+game_duration: 5.9187657833099365
+rounds: 3.5
+winner: Human (Player X)
+
+game_id: 1701238923.120247
+game_duration: 6.101733684539795
+rounds: 3.5
 winner: Human (Player X)
 
