@@ -1,7 +1,25 @@
+"""
+
+3. Using the Google Colab notebook environment, upload the log file and import and read the logs in the Colab notebook
+4. Report on at least 3 interesting statistics about the games and players using tables (e.g. global ranks, wins/losses/draws, etc).
+5. Create at least 3 plots of the game and player data using Matplotlib, Seaborn, Plotly, or Pandas
+6. The code used to record data during the game needs to be added to your repository
+"""
 from logic import make_empty_board, print_board, get_winner
-from data_visualization import record_winner, dict_to_csv
 import random
 import time
+import os
+
+def record_winner(text, filename, directory):
+  file_path = os.path.join(directory, filename)
+
+  with open(file_path, 'a') as f:
+    f.write(text + '\n' + '\n')
+
+def dict_to_csv(data):
+  return '\n'.join([f'{key}: {value}' for key, value in data.items()])
+
+game_data = {}
 
 class Game:
     def __init__(self, playerX, playerO):
@@ -12,6 +30,7 @@ class Game:
         self._playerO = playerO
         self._current_player = playerX
         self._winner = None
+        self._game_id = time.time()
 
     def switch_players(self):
         if self._current_player == self._playerO:
@@ -26,10 +45,13 @@ class Game:
         print("Here's what number each spot is represented by:")
         print_board(self._boardIndex)
 
+        game_start_time = time.time()
+
         while self._winner is None:
             # Player's turn
             if isinstance(self._current_player, Human):
                 self._current_player.get_player_input(self._board)
+
             elif isinstance(self._current_player, Bot):
                 print("Bot's turn!")
                 i, j = self._current_player.get_bot_input(self._board)
@@ -44,6 +66,7 @@ class Game:
 
             # If there's a winner or a draw, break the loop
             if self._winner is not None:
+                game_end_time = time.time()
                 break
 
             # Switch the player for the next turn
@@ -54,6 +77,17 @@ class Game:
             print(f"It's a {self._winner}")
         else:
             print(f"{self._winner} won")
+
+        # Record the winner
+        game_data['game_id'] = self._game_id
+        game_data['game_duration'] = game_end_time - game_start_time
+        if self._winner == 'X':
+            game_data['winner'] = 'Human (Player X)'
+        elif self._winner == 'O':
+            game_data['winner'] = 'Bot (Player O)'
+        else:
+            game_data['winner'] = 'None'
+
 
 class Human:
     def __init__(self, symbol):
@@ -86,14 +120,16 @@ class Human:
         print(f"Player's turn!")
         user_input = input("Please choose an empty spot by typing its corresponding number: ")
 
+
         if int(user_input) in range(1, 10) and flat_board[int(user_input)-1] is None:
             self.place_input(board, self.symbol, user_input)
         else:
             print("Invalid input!")
             self._valid_input -= 1
             self.get_player_input(board)
-        
+
         return self._valid_input
+
 
 class Bot:
     def __init__(self, symbol):
@@ -109,3 +145,5 @@ class Bot:
 # Start game with Human and Bot players
 game = Game(Human('X'), Bot('O'))
 game.run()
+csv_player_data = dict_to_csv(game_data)
+record_winner(csv_player_data, "database", "logs")
