@@ -1,0 +1,217 @@
+first_move: 6
+game_id: 1701827116.636185
+game_duration: 11.38569712638855
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 5
+game_id: 1701827132.1158211
+game_duration: 5.2751593589782715
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 1
+game_id: 1701827140.5889423
+game_duration: 6.1357409954071045
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 9
+game_id: 1701827148.4455602
+game_duration: 7.985135793685913
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 4
+game_id: 1701827159.7229433
+game_duration: 8.677505016326904
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 7
+game_id: 1701827170.3111272
+game_duration: 8.5069580078125
+rounds: 3.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827201.0366597
+game_duration: 12.490042209625244
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 7
+game_id: 1701827215.1193047
+game_duration: 7.255131721496582
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 9
+game_id: 1701827225.5292587
+game_duration: 15.914616823196411
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827243.4066384
+game_duration: 19.493736743927002
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 4
+game_id: 1701827269.3745718
+game_duration: 21.592630624771118
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 9
+game_id: 1701827292.6278427
+game_duration: 13.295525789260864
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827314.708853
+game_duration: 14.17864990234375
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 5
+game_id: 1701827340.169413
+game_duration: 20.187448740005493
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827362.2475448
+game_duration: 13.541427373886108
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 6
+game_id: 1701827383.2946215
+game_duration: 53.31358456611633
+rounds: 4.5
+winner: None
+winner is first player: None
+
+first_move: 5
+game_id: 1701827551.3945048
+game_duration: 3.9295806884765625
+rounds: 3.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 3
+game_id: 1701827557.9649496
+game_duration: 3.238971471786499
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 6
+game_id: 1701827562.7987597
+game_duration: 3.828382730484009
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 4
+game_id: 1701827568.2906842
+game_duration: 8.393591403961182
+rounds: 3.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 9
+game_id: 1701827578.5659044
+game_duration: 11.878221988677979
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827616.5445044
+game_duration: 9.182368993759155
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 7
+game_id: 1701827629.9492443
+game_duration: 9.545099020004272
+rounds: 4.5
+winner: None
+winner is first player: None
+
+first_move: 7
+game_id: 1701827682.4310439
+game_duration: 4.557572603225708
+rounds: 3.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 4
+game_id: 1701827688.7836385
+game_duration: 10.923008680343628
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 5
+game_id: 1701827701.7522988
+game_duration: 3.9870803356170654
+rounds: 2.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 1
+game_id: 1701827707.3875258
+game_duration: 5.1599180698394775
+rounds: 3.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 5
+game_id: 1701827739.9218094
+game_duration: 11.711602926254272
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
+first_move: 8
+game_id: 1701827753.1154268
+game_duration: 10.875902652740479
+rounds: 4.5
+winner: None
+winner is first player: None
+
+first_move: 1
+game_id: 1701827765.3742623
+game_duration: 5.8575193881988525
+rounds: 4.0
+winner: Bot (Player O)
+winner is first player: False
+
+first_move: 5
+game_id: 1701827774.365541
+game_duration: 8.321642637252808
+rounds: 4.5
+winner: Human (Player X)
+winner is first player: True
+
